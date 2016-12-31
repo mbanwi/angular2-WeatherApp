@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css">
+	<!--	<link rel="stylesheet" type="text/css" href="style.css"> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+		
+		<script>
+			$('#toggle').click(function(){
+				$('.sidebar').sidebar('toggle');
+			});
+
+			/* dropdown */
+			$('.ui.dropdown').dropdown();
+		</script>
+	</head>
+  <body>
+		<!--side bar-->
+     <div class="ui sidebar menu large compact container icon labeled vertical">
+			<a href="#" class="item"><i class="world icon"></i>Cities</a>
+			<a href="#" class="item"><i class="cloud icon"></i>Weather condition</a>
+			<div class="ui buttons">
+				<button class="ui black button"><i class="sign in icon"></i>Login</button>
+			  	<div class="or"></div>
+			 	<button class="ui positive button"><i class="users icon"></i>Sign Up</button>
+			</div>
+		</div>
+    <!--Main content-->
+		<div class="pusher">
+			<div class="ui vertical aligned center segment landing inverted">
+				<div class="transbg">
+          <div class="ui container">
+						<div class="ui secondary inverted top large pointing menu">
+							<div class="left item">
+								<a href="#" class="toc item">
+									<i class="sidebar icon"></i>Menu
+								</a>
+							</div>
+							<div class="right item">
+								<a href="/" class="active item">Home</a>
+								<a href="#" class="item">Cities</a>
+								<a href="#" class="item">find out weather condition</a>
+								<div class="ui buttons">
+								  <button class="ui black button"><i class="sign in icon"></i>Login</button>
+								  <div class="or"></div>
+								  <button class="ui positive button"><i class="users icon"></i>Sign Up</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ui container text">
+					<h1 class="ui hearder centered inverted">Look up weather condition&nbsp;<i class="cloud icon"></i><i class="cloud icon"></i><i class="cloud icon"></i></h1>
+					<div class="container fluid findbg">
+							<form action="clearText()" class="ui form">
+								<div class="field">
+									<div class="fields">
+										<div class="eleven wide field">
+											<div class="ui search location">
+												<div class="ui left icon input">
+													<i class="inverted circular blue map icon"></i>
+													<input type="text" class="prompt" name="location" placeholder="Enter a city...">
+												</div>
+											</div>
+										</div>
+										<div class="three wide field">
+											
+											<div id="gender-select" class="ui selection dropdown">
+												<div class="default text">Select Province</div>
+												<i class="dropdown icon"></i>
+												<input type="hidden" name="province">
+												<div class="ui secondary menu">
+													<div class="item" data-value="private">private</div>
+													<div class="item" data-value="2private">2-private</div>
+													<div class="item" data-value="3private">3-private</div>
+												</div>
+											</div>
+										
+										
+										</div>
+									</div>
+								</div>
+								
+								<!--search button-->
+								<div class="field">
+									<button class="ui submit green container animated button" tabindex="0" type="submit">
+										<div class="visible content">Lets's go</div>
+										<div class="hidden content">You better check the weather before you go out&nbsp;<i class="cloud icon"></i><i class="cloud icon"></i><i class="cloud icon"></i></div>
+									</button>
+								</div>
+								<div class="results"></div>
+							</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$('#toggle').click(function(){
+				$('.sidebar').sidebar('toggle');
+			});
+
+			/* dropdown */
+			$('.ui.dropdown').dropdown();
+		</script>
+  </body>
+</html>

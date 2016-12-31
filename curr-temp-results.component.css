@@ -1,0 +1,15 @@
+.current-temperature {
+	margin-bottom: 30px;
+	margin-top: 10px;
+	padding: 1em 1.5em;
+	background: rgba(241,205,255,0.7);
+	color :blue;
+	text-align:center;
+    font-size:20px;
+    font-style: oblique;
+    font-family: "Times New Roman", Georgia, serif;
+	width: 50%;
+}
+p {
+	color :blue;
+}
